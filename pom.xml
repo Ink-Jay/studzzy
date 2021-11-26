@@ -6,7 +6,21 @@
     <groupId>Studzzy</groupId>
     <artifactId>Studzzy</artifactId>
     <version>1.0</version>
-    <packaging>war</packaging>
+    
+  <build>
+   <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration>
+          <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
+         </configuration>
+       </plugin>
+      </plugins>
+     </pluginManagement>
+   </build>
 
     <properties>
         <maven.compiler.release>15</maven.compiler.release>
